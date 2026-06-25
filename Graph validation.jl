@@ -5,10 +5,9 @@
 # for a hemi-equilateral triangular duct under an oscillatory
 # pressure gradient (Womersley flow).
 #------------------------------------------------------------------------
-
-
+ 
 using Plots 
-using LaTeXStrings  # nao funciona ?
+using LaTeXStrings
 
 const A = sqrt(3) / 6
 const N = 60
