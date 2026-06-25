@@ -7,14 +7,13 @@
 #------------------------------------------------------------------------
 
 
-using Plots
-using LaTeXStrings
+using Plots 
+using LaTeXStrings  # nao funciona ?
 
 const A = sqrt(3) / 6
 const N = 60
 
 λ_mn(m, n) = 4π^2 / 3 * (3m^2 + 3m*n + n^2)
-
 
 function I_phi(m, n)
     t1 = (1 - (-1)^m) / (m  * (3m + 2n))
