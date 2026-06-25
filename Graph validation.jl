@@ -14,14 +14,14 @@ const N = 60
 
 λ_mn(m, n) = 4π^2 / 3 * (3m^2 + 3m*n + n^2)
 
-function I_phi(m, n)
+function I_phi(m, n) # integral
     t1 = (1 - (-1)^m) / (m  * (3m + 2n))
     t2 = (1 - (-1)^n) / (n  * (2m +  n))
     t3 = (1 - (-1)^(m+n)) / ((m+n) * (3m + n))
     return sqrt(3) / π^2 * (t1 + t2 - t3)
 end
 
-const I_phi2 = sqrt(3) / 8
+const I_phi2 = sqrt(3) / 8 # integral^2
 
 function wbar_cs(α)
     wc = 0.0
